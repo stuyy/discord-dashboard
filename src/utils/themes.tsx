@@ -16,6 +16,6 @@ export const DarkTheme: Theme = {
     main: "#FFFFFF",
   },
   height: {
-    topContent: "100px",
+    topContent: "75px",
   },
 };

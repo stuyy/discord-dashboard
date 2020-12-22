@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={{ height: "100%", display: "flex" }}>
       <Sidebar />
-      <Menu />
+      <Menu title="Drinks Bot Menu" />
       <Switch>
         <Redirect path="/" exact={true} to="/dashboard" />
         <Route path="/dashboard" exact={true} component={DashboardPage} />

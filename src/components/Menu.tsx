@@ -1,6 +1,14 @@
 import * as React from "react";
-import { MenuStyle } from "../utils/styles";
+import { MenuStyle, MenuHeader } from "../utils/styles";
 
-export const Menu = () => {
-  return <MenuStyle>Menu</MenuStyle>;
+type MenuProps = {
+  title: string;
+};
+
+export const Menu = (props: MenuProps) => {
+  return (
+    <MenuStyle>
+      <MenuHeader>{props.title}</MenuHeader>
+    </MenuStyle>
+  );
 };
