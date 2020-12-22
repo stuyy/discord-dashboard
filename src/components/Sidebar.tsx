@@ -1,12 +1,28 @@
 import * as React from "react";
-import { SidebarStyle, SidebarHeader, IconStyle } from "../utils/styles";
+import {
+  SidebarStyle,
+  SidebarHeader,
+  IconStyle,
+  SidebarContent,
+  GuildIcon,
+} from "../utils/styles";
+import { Guild } from "../utils/types";
 
-export const Sidebar = () => {
+type SidebarProps = {
+  guilds: Guild[];
+};
+
+export const Sidebar = (props: SidebarProps) => {
   return (
     <SidebarStyle>
       <SidebarHeader>
-        <IconStyle></IconStyle>
+        <IconStyle />
       </SidebarHeader>
+      <SidebarContent>
+        {props.guilds.map((guild) => (
+          <GuildIcon />
+        ))}
+      </SidebarContent>
     </SidebarStyle>
   );
 };
