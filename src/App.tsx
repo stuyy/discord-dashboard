@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { Menu } from "./components/Menu";
 import { Sidebar } from "./components/Sidebar";
 import { DashboardPage } from "./pages/Dashboard";
+import {} from "../__mocks__";
 
 function App() {
   return (
