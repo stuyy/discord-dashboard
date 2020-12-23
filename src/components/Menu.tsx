@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useContext } from "react";
 import {
   MenuStyle,
   MenuHeader,
@@ -8,6 +9,7 @@ import {
 } from "../utils/styles";
 import { menuItems } from "../utils/constants";
 import { History } from "history";
+import GuildContext from "../utils/contexts/GuildContext";
 
 type MenuProps = {
   title: string;
@@ -15,13 +17,21 @@ type MenuProps = {
 };
 
 export const Menu = ({ title, history }: MenuProps) => {
+  const { guild } = useContext(GuildContext);
+  if (!guild)
+    return (
+      <MenuStyle>
+        <MenuHeader>Please Select a Guild</MenuHeader>
+      </MenuStyle>
+    );
+
   return (
     <MenuStyle>
       <MenuHeader onClick={() => history.push("/dashboard")}>
         {title}
       </MenuHeader>
       <MenuContent>
-        {menuItems("123").map((item) => (
+        {menuItems(guild.id).map((item) => (
           <MenuCategory key={item.name}>
             <span>{item.name}</span>
             {item.routes.map((route) => (
