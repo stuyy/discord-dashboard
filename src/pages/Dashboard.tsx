@@ -15,7 +15,7 @@ export const DashboardPage = (props: DashboardProps) => {
     );
   return (
     <BasePageStyle>
-      <DashboardHeader>Dashboard Page</DashboardHeader>
+      <DashboardHeader>General / Muted</DashboardHeader>
     </BasePageStyle>
   );
 };

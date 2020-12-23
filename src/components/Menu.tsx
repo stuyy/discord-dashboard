@@ -27,7 +27,7 @@ export const Menu = ({ title, history }: MenuProps) => {
 
   return (
     <MenuStyle>
-      <MenuHeader onClick={() => history.push("/dashboard")}>
+      <MenuHeader onClick={() => history.push(`/dashboard/${guild.id}`)}>
         {title}
       </MenuHeader>
       <MenuContent>

@@ -5,6 +5,6 @@ type GeneralPageProps = {};
 
 export const GeneralPage = (props: GeneralPageProps) => (
   <BasePageStyle>
-    <DashboardHeader>Dashboard Page</DashboardHeader>
+    <DashboardHeader>General / Muted </DashboardHeader>
   </BasePageStyle>
 );
