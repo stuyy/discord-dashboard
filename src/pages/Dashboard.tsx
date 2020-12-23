@@ -1,10 +1,10 @@
 import * as React from "react";
-import { DashboardPageStyle, DashboardHeader } from "../utils/styles";
+import { DashboardHeader, BasePageStyle } from "../utils/styles";
 
 type DashboardProps = {};
 
 export const DashboardPage = (props: DashboardProps) => (
-  <DashboardPageStyle>
+  <BasePageStyle>
     <DashboardHeader>Dashboard Page</DashboardHeader>
-  </DashboardPageStyle>
+  </BasePageStyle>
 );

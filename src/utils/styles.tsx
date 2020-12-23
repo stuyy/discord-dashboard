@@ -29,7 +29,7 @@ export const MenuStyle = styled.aside`
   }
 `;
 
-export const DashboardPageStyle = styled.div`
+export const BasePageStyle = styled.div`
   height: 100%;
   background-color: ${({ theme }) => theme.base.content};
   color: ${({ theme }) => theme.text.main};
@@ -39,6 +39,8 @@ export const DashboardPageStyle = styled.div`
   margin-left: 450px;
   width: calc(100% - 450px);
 `;
+
+export const DashboardPageStyle = styled.div``;
 
 export const IconStyle = styled.div`
   height: 60px;

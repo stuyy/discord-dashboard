@@ -1,17 +1,17 @@
 import { MenuGroup } from "./types";
 
-export const menuItems: MenuGroup[] = [
+export const menuItems = (guildId: string): MenuGroup[] => [
   {
     name: "Security",
     path: "/security",
     routes: [
       {
         name: "Authentication",
-        path: "/security/authentication",
+        path: `/dashboard/${guildId}/security/authentication`,
       },
       {
         name: "Roles",
-        path: "/security/roles",
+        path: `/dashboard/${guildId}/security/roles`,
       },
     ],
   },
@@ -20,12 +20,12 @@ export const menuItems: MenuGroup[] = [
     path: "/general",
     routes: [
       {
-        name: "General",
-        path: "/general/muted",
+        name: "Muted",
+        path: `/dashboard/${guildId}/general/muted`,
       },
       {
-        name: "Roles",
-        path: "/general/prefix",
+        name: "Guild Prefix",
+        path: `/dashboard/${guildId}/general/prefix`,
       },
     ],
   },
@@ -34,12 +34,12 @@ export const menuItems: MenuGroup[] = [
     path: "/miscellaneous",
     routes: [
       {
-        name: "Fun Commands",
-        path: "/miscellaneous/fun-commands",
+        name: "Commands",
+        path: `/dashboard/${guildId}/miscellaneous/fun-commands`,
       },
       {
         name: "Levels",
-        path: "/miscellaneous/levels",
+        path: `/dashboard/${guildId}/miscellaneous/levels`,
       },
     ],
   },

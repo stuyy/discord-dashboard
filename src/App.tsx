@@ -8,12 +8,22 @@ import { guilds } from "./__mocks__";
 function App() {
   const history = useHistory();
   return (
-    <div style={{}}>
+    <div>
       <Sidebar guilds={guilds} />
       <Menu title="Drinks Bot Menu" history={history} />
       <Switch>
         <Redirect path="/" exact={true} to="/dashboard" />
         <Route path="/dashboard" exact={true} component={DashboardPage} />
+        <Route
+          path="/dashboard/:guildId"
+          exact={true}
+          component={DashboardPage}
+        />
+        <Route
+          path="/dashboard/:guildId/general/muted"
+          exact={true}
+          component={DashboardPage}
+        />
       </Switch>
     </div>
   );

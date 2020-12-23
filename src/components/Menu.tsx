@@ -14,29 +14,27 @@ type MenuProps = {
   history: History;
 };
 
-const mapCategories = (history: History) =>
-  menuItems.map((item) => (
-    <MenuCategory key={item.name}>
-      <span>{item.name}</span>
-      {item.routes.map((route) => (
-        <MenuCategoryItem
-          key={route.name}
-          onClick={() => history.push(route.path)}
-        >
-          <span># {route.name}</span>
-        </MenuCategoryItem>
-      ))}
-    </MenuCategory>
-  ));
-
-export const Menu = (props: MenuProps) => {
-  console.log(props);
+export const Menu = ({ title, history }: MenuProps) => {
   return (
     <MenuStyle>
-      <MenuHeader onClick={() => props.history.push("/dashboard")}>
-        {props.title}
+      <MenuHeader onClick={() => history.push("/dashboard")}>
+        {title}
       </MenuHeader>
-      <MenuContent>{mapCategories(props.history)}</MenuContent>
+      <MenuContent>
+        {menuItems("123").map((item) => (
+          <MenuCategory key={item.name}>
+            <span>{item.name}</span>
+            {item.routes.map((route) => (
+              <MenuCategoryItem
+                key={route.name}
+                onClick={() => history.push(route.path)}
+              >
+                <span># {route.name}</span>
+              </MenuCategoryItem>
+            ))}
+          </MenuCategory>
+        ))}
+      </MenuContent>
     </MenuStyle>
   );
 };
