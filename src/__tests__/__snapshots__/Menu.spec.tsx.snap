@@ -2,8 +2,8 @@
 
 exports[`should render Menu 1`] = `
 <header
-  class="sc-eCssSg sc-iBPRYJ eniBFN feOKzh"
+  class="sc-jSgupP sc-fubCfw hFNlhE eBohen"
 >
-  Drinks Bot Menu
+  Please Select a Guild
 </header>
 `;
