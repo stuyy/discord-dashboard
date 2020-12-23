@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Sidebar 1`] = `
+<DocumentFragment>
+  <aside
+    class="sc-bdfBwQ liFhOG"
+  >
+    <header
+      class="sc-eCssSg sc-jSgupP eniBFN brmkFP"
+    >
+      <div
+        class="sc-hKgILt eqmFsU"
+      />
+    </header>
+    <div
+      class="sc-fubCfw bjsDEv"
+    >
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+      <div
+        class="sc-hKgILt sc-pFZIQ eqmFsU fIPWgr guild-icon"
+      />
+    </div>
+  </aside>
+</DocumentFragment>
+`;

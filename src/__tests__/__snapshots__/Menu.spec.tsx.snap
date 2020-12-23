@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Menu 1`] = `
+<header
+  class="sc-eCssSg sc-iBPRYJ eniBFN feOKzh"
+>
+  Drinks Bot Menu
+</header>
+`;

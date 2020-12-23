@@ -20,7 +20,7 @@ export const Sidebar = (props: SidebarProps) => {
       </SidebarHeader>
       <SidebarContent>
         {props.guilds.map((guild) => (
-          <GuildIcon />
+          <GuildIcon className="guild-icon" key={guild.id} />
         ))}
       </SidebarContent>
     </SidebarStyle>
