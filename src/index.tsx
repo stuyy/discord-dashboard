@@ -6,6 +6,13 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./utils/themes";
 import "./index.css";
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+
+// const client = new ApolloClient({
+//   uri: "http://localhost:3001/api/graphql",
+//   cache: new InMemoryCache(),
+//   credentials: "include",
+// });
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +20,11 @@ ReactDOM.render(
       <ThemeProvider theme={DarkTheme}>
         <App />
       </ThemeProvider>
+      {/* <ApolloProvider client={client}>
+        <ThemeProvider theme={DarkTheme}>
+          <App />
+        </ThemeProvider>
+      </ApolloProvider> */}
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

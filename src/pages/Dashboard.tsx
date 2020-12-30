@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useContext, useEffect } from "react";
+import { DropdownMenu } from "../components/DropdownMenu";
+import { selectMenuItems } from "../utils/constants";
 import GuildContext from "../utils/contexts/GuildContext";
 import { GuildStoreContext } from "../utils/contexts/GuildStoreContext";
 import { DashboardHeader, BasePageStyle } from "../utils/styles";
@@ -26,7 +28,15 @@ export const DashboardPage = (props: DashboardProps) => {
     );
   return (
     <BasePageStyle>
-      <DashboardHeader>General / Muted</DashboardHeader>
+      <DashboardHeader>General</DashboardHeader>
+      <div style={{ padding: "20px" }}>
+        <DropdownMenu title="Update Default Role" items={selectMenuItems} />
+        <div style={{ margin: "2.5px 0px" }} />
+        <DropdownMenu title="Update Moderator Role" items={selectMenuItems} />
+        <div style={{ margin: "2.5px 0px" }} />
+        <DropdownMenu title="Update Muted Role" items={selectMenuItems} />
+        <div style={{ margin: "2.5px 0px" }} />
+      </div>
     </BasePageStyle>
   );
 };

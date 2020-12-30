@@ -1,4 +1,4 @@
-import { MenuGroup } from "./types";
+import { MenuGroup, MenuItem } from "./types";
 
 export const menuItems = (guildId: string): MenuGroup[] => [
   {
@@ -20,12 +20,8 @@ export const menuItems = (guildId: string): MenuGroup[] => [
     path: "/general",
     routes: [
       {
-        name: "Muted",
+        name: "General",
         path: `/dashboard/${guildId}/general/muted`,
-      },
-      {
-        name: "Guild Prefix",
-        path: `/dashboard/${guildId}/general/prefix`,
       },
     ],
   },
@@ -43,4 +39,14 @@ export const menuItems = (guildId: string): MenuGroup[] => [
       },
     ],
   },
+];
+
+export const selectMenuItems: MenuItem[] = [
+  { name: "Developer", value: "developer" },
+  { name: "Moderator", value: "moderator" },
+  { name: "Guest", value: "guest" },
+  { name: "React", value: "react" },
+  { name: "Angular", value: "angular" },
+  { name: "Node", value: "node" },
+  { name: "Java", value: "java" },
 ];

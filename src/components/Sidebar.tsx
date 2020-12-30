@@ -26,10 +26,12 @@ export const Sidebar = (props: SidebarProps) => {
       <SidebarContent>
         {props.guilds.map((guild) => (
           <GuildIcon
+            bg={guild.icon}
             className="guild-icon"
             key={guild.id}
             onClick={() => {
               setGuild(guild);
+              console.log(guild.icon);
               props.history.push(`/dashboard/${guild.id}`);
             }}
           />
